@@ -171,7 +171,6 @@ nextBtn.addEventListener("click", () => {
 
     showMemory();
 
-=======
 // ==============================
 // TEDDY'S LITTLE DELIVERY
 // ==============================
@@ -345,4 +344,16 @@ nextBtn.addEventListener("click", () => {
     showMemory();
 
 >>>>>>> 232565ccdb084b0f88fc51951ffe6b3efc8f787d
+gallery.classList.add("hidden");
+
+        ending.classList.remove("hidden");
+
+        ending.classList.add("show");
+
+        return;
+
+    }
+
+    showMemory();
+
 });
