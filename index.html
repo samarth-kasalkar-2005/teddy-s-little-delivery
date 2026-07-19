@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Teddy's Little Delivery 🧸💌</title>
 
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- ================= Background ================= -->
+    <!-- ========================= -->
+    <!-- LOADER -->
+    <!-- ========================= -->
+
+    <div id="loader">
+
+        <div class="loader-card">
+
+            <h2>🧸</h2>
+
+            <p>Packing your surprise...</p>
+
+            <div class="loader-bar">
+
+                <div class="loader-progress"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================= -->
 
     <div class="sky">
 
@@ -31,63 +58,105 @@
 
     </div>
 
-    <!-- ================= Teddy Section ================= -->
+    <!-- ========================= -->
+    <!-- MAIN STORY -->
+    <!-- ========================= -->
 
     <section id="scene">
 
+        <!-- Teddy -->
+
         <img
-            src="assets/teddy.png"
-            class="teddy"
             id="teddy"
+            class="teddy"
+            src="assets/teddy.png"
             alt="Teddy">
 
-        <div id="speech" class="speech hidden">
-            I have something for you... 💌
+        <!-- Speech -->
+
+        <div id="speech"
+             class="speech hidden">
+
+            <span id="typing"></span>
+
         </div>
 
-        <img
-            src="assets/envelope.png"
-            id="envelope"
-            class="hidden"
-            alt="Envelope">
+        <!-- Envelope -->
+
+        <div id="envelope"
+             class="hidden">
+
+            <img
+                src="assets/envelope.png"
+                alt="Envelope">
+
+        </div>
 
     </section>
 
-    <!-- ================= Letter ================= -->
+    <!-- ========================= -->
+    <!-- LETTER -->
+    <!-- ========================= -->
 
-    <div id="letter" class="hidden">
+    <section
+        id="letter"
+        class="hidden">
 
         <div class="letter-card">
 
-            <h2>💌 A Letter For You</h2>
+            <h2>💌</h2>
+
+            <h3>A Letter For You</h3>
 
             <p>
-                I wanted to send you a little surprise.
-                Tap below and let's relive a few memories together ❤️
+
+                Dear You,
+
+                <br><br>
+
+                It's been a while...
+
+                <br><br>
+
+                I hope this tiny surprise
+                makes you smile today.
+
+                <br><br>
+
+                ❤️
+
             </p>
 
             <button id="startBtn">
+
                 Open Memories
+
             </button>
 
         </div>
 
-    </div>
+    </section>
 
-    <!-- ================= Gallery ================= -->
+    <!-- ========================= -->
+    <!-- GALLERY -->
+    <!-- ========================= -->
 
-    <div id="gallery" class="hidden">
+    <section
+        id="gallery"
+        class="hidden">
 
         <div class="gallery-card">
 
-            <img
-                id="memoryPhoto"
-                src=""
-                alt="Memory">
+            <div class="polaroid">
 
-            <p id="memoryText">
-                ❤️
-            </p>
+                <img
+                    id="memoryPhoto"
+                    src=""
+                    alt="Memory">
+
+            </div>
+
+            <p id="memoryText"></p>
 
             <button id="nextBtn">
 
@@ -97,17 +166,28 @@
 
         </div>
 
-    </div>
+    </section>
 
-    <!-- ================= Ending ================= -->
+    <!-- ========================= -->
+    <!-- ENDING -->
+    <!-- ========================= -->
 
-    <div id="ending" class="hidden">
+    <section
+        id="ending"
+        class="hidden">
 
         <div class="ending-card">
 
-            <h1>🧸❤️</h1>
+            <img
+                src="assets/teddy.png"
+                class="ending-teddy"
+                alt="Teddy">
 
-            <h2>Thank You</h2>
+            <h2>
+
+                Thank You ❤️
+
+            </h2>
 
             <p>
 
@@ -115,15 +195,21 @@
 
                 <br><br>
 
-                I just wanted to make you smile today.
+                I just wanted to make
+                you smile today.
 
                 <br><br>
 
-                Take care of yourself 🤍
+                Take care of yourself.
+
+                <br><br>
+
+                🧸❤️
 
             </p>
 
-            <button onclick="location.reload()">
+            <button
+                onclick="location.reload()">
 
                 Watch Again
 
@@ -131,17 +217,22 @@
 
         </div>
 
-    </div>
+    </section>
 
-    <!-- ================= Audio (Optional) ================= -->
+    <!-- Optional Music -->
 
     <!--
     <audio id="music" loop>
-        <source src="assets/music.mp3" type="audio/mpeg">
+
+        <source
+            src="assets/music.mp3"
+            type="audio/mpeg">
+
     </audio>
     -->
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
